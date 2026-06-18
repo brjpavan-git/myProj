@@ -13,8 +13,10 @@ export default function Hero() {
       <div className="buttons">
         <a href="#projects">View Projects</a>
 
-        <a href="/resume.pdf"
+        <a href={`${import.meta.env.BASE_URL}resume.pdf`}
          download="Pavan_Bairoju_Resume.pdf"
+         target="_blank"
+         rel="noopener noreferrer"
          className="btn btn-primary">
           Download Resume
         </a>
